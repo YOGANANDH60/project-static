@@ -1,0 +1,115 @@
+.burger {
+  font-size: 37px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navv a {
+  color: rgb(4, 132, 44);
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.navv a:hover {
+  font-weight: 400;
+  color: rgb(0, 117, 84);
+}
+.c {
+  text-decoration: none;
+}
+
+/* Slider */ 
+.slick-slide {
+  margin: 0px 20px;
+} 
+.slick-slide img {
+  width: 100%;
+}
+
+#category{
+  border-right: solid 2px rgb(58, 104, 58);
+}
+
+#category h2{
+  margin-left: 20px;
+  margin-bottom: 35px;
+  color: rgb(23, 42, 88);
+  text-decoration: underline;
+}
+
+#category ul li{
+  list-style: none;
+  border-bottom: solid 1px rgb(239, 235, 235);
+  margin-top: 25px;
+  margin-right: 25px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, opacity 0.1s ease-in;
+}
+
+#category ul li a{
+  font-size: 25px;
+  font-weight: 600;
+  color: rgb(6, 108, 6);
+  text-transform: capitalize;
+}
+
+#category ul li:hover{
+  transform: scale(1.1);
+}
+
+
+#category ul li i{
+  color: rgb(7, 152, 7);
+}
+.lg{
+  display: flex;
+  justify-content: space-between;
+
+}
+.lg span button i{
+  font-size: 30px;
+  position: relative;
+  left: -150px;
+}
+
+.line{
+  position: relative;
+  top: -12px;
+}
+
+.card-body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover{
+  box-shadow: 10px 15px 15px gray;
+}
+.card{
+  margin: 55px;
+}
+
+
+@media (max-width: 500px) {
+  /* Styles for screens with width <= 1200px */
+  .card{
+    margin-left: 20px;
+    max-width: 85%;
+  }
+}
+/* Screens between 600px and 1200px */
+@media (min-width: 956px) and (max-width: 1400px) {
+  .card{
+    margin-left: 20px;
+    max-width: 99%;
+  }
+}
+
+
+
+
