@@ -1,3 +1,6 @@
+
+
+
 .burger {
   font-size: 37px;
 }
@@ -10,6 +13,7 @@ a{
   color: rgb(4, 132, 44);
   font-style: italic;
   font-weight: bolder;
+  font-size: 22px;
 }
 
 .navv a:hover {
@@ -27,6 +31,8 @@ a{
 .slick-slide img {
   width: 100%;
 }
+
+/* categories */
 
 #category{
   border-right: solid 2px rgb(58, 104, 58);
@@ -66,12 +72,12 @@ a{
 #category ul li i{
   color: rgb(7, 152, 7);
 }
-.lg{
+.future{
   display: flex;
   justify-content: space-between;
 
 }
-.lg span button i{
+.future span button i{
   font-size: 30px;
   position: relative;
   left: -150px;
@@ -79,37 +85,142 @@ a{
 
 .line{
   position: relative;
-  top: -12px;
+  top: -15px;
 }
+/* future catecories  */
 
-.card-body{
+.future-catecory .card-body{
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card:hover{
+.offcanvas-body{
+  padding: 0px;
+}
+.future-catecory .card:hover{
   box-shadow: 10px 15px 15px gray;
 }
-.card{
+.future-catecory .card{
   margin: 55px;
 }
 
+/* adjust card */
+@media (max-width: 400px) {
 
-@media (max-width: 500px) {
-  /* Styles for screens with width <= 1200px */
-  .card{
+  .future-catecory .card{
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 400px) and (max-width:500px) {
+
+  .future-catecory .card{
     margin-left: 20px;
     max-width: 85%;
   }
 }
-/* Screens between 600px and 1200px */
+
 @media (min-width: 956px) and (max-width: 1400px) {
-  .card{
+  .future-catecory .card{
     margin-left: 20px;
     max-width: 99%;
   }
 }
 
+/* popular prodect */
+
+.popular .card-body{
+  font-size: 20px;
+}
+.popular .card img{
+  border-radius: 5%;
+}
+.add .btn{
+  width: 100px;
+  font-size: 20px;
+}
+.popular .card {
+position: relative;
+overflow: hidden;
+}
+.popular .card:hover{
+  box-shadow:  10px 10px 10px rgba(0, 0, 0, 0.1);
+  border: green solid 1px;
+}
+.preview {
+position: absolute;
+top: 150px;
+left: 80px;
+opacity: 0;
+transition: opacity 0.3s ease;
+}
+.popular .card:hover .preview {
+opacity: 1;
+}
+
+.p-prodect{
+  margin-left: 6rem;
+  margin-right: 0rem;
+}
 
 
+/* samll-baner */
+
+@media (min-width: 1200px) and (max-width: 1400px) {
+
+  .small-banner .b-1 img{
+
+    max-width: 85%;
+  }
+  .small-banner .b-2 img{
+
+    max-width: 85%;
+  }
+}
+@media (max-width:750px) {
+  .small-banner .b-1 img{
+
+    max-width: 70%;
+  }
+  .small-banner .b-2 img{
+
+    max-width: 70%;
+  }
+}
+
+
+
+/* comman query for 300px to 400 */
+@media (min-width: 300px) and (max-width: 400px){
+  /* logo */
+  .logo{
+    width: 140px;
+  }
+  /* header cfu-cart,fav,user */
+  .cfu{
+    position: relative;
+    left: 10px;
+  }
+  /* carousal */
+  .slide{
+    margin-left: 30px;
+    max-width: 100%;
+  }
+
+  /* popular prodect */
+  .p-prodect{
+    margin-left: 1rem;
+    margin-right: 0rem;
+  }
+
+  /* small banner */
+  .small-banner .b-1 img{
+
+    max-width: 70%;
+  }
+  .small-banner .b-2 img{
+
+    max-width: 70%;
+  }
+}
 
