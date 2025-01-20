@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bootstrap</title>
-    <!-- internal css -->
-
+    <title>shopify</title>
+    <!-- bootstrip -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,12 +12,23 @@
       crossorigin="anonymous"
     />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- jquery -->
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"
+    />
+    <!-- internal css -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -164,147 +174,91 @@
         </div>
       </div>
     </header>
+    <hr />
 
-    <!-- blog title -->
-    <div class="col-12 card bg-info text-white">
-      <h1 class="card-title d-flex justify-content-center">Bolg</h1>
-      <p class="d-flex justify-content-center">
-        here you can see recent post
-      </p>
-    </div>
+    <!-- about the site -->
+    <section class="container text-capitalize about">
+      <div class="row">
+        <!-- about -->
+        <div class="col-12">
+          <h3 class="text-decoration-underline">About US</h3>
+          <p class="ms-3 text-justify">
+            Welcome to shopify, your one-step online destination for a diverse
+            range of produscts that cater to all you needs and preference, we
+            blieve that shopping should be a delightful and hassle-free
+            experience, and our mission is to offer you the best in
+            quality,variety, and,convenience
+          </p>
+        </div>
 
-    <!-- blog contant -->
-    <div class="row container">
-    </div>
-    <div class="container pt-3 post">
-      <div class="row mb-1">
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
-          <a href="#" style="text-decoration: none">
-            <div class="card">
-              <div class="row">
-                <div class="col-6 col-sm-12">
-                  <img
-                    class="img-fluid rounded h-100 w-100"
-                    src="https://picsum.photos/300/200"
-                    alt=""
-                  />
-                </div>
-                <div class="card-body col-6 col-sm-12">
-                  <h1 class="mb-3">post title 1</h1>
-                  <p>date: feb 12 ,2024</p>
-                  <p>this is content of post 1</p>
-                </div>
-              </div>
-            </div>
-          </a>
+        <!-- our story -->
+        <div class="col-12">
+          <h3 class="text-decoration-underline">Our Story</h3>
+          <p class="ms-3 text-justify">
+            shopify was founded with a vision to simlify online shopping by
+            providing a wide array of prodect inder on roof. we strive to offer
+            something for everyone, whether you're looking for the latest
+            fashion tresnde,gaming essentials,cutting-edge electroincs,or
+            household items.
+          </p>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
-          <a href="#" style="text-decoration: none">
-            <div class="card">
-              <div class="row">
-                <div class="col-6 col-sm-12">
-                  <img
-                    class="img-fluid rounded h-100 w-100"
-                    src="https://picsum.photos/300/200"
-                    alt=""
-                  />
-                </div>
-                <div class="card-body col-6 col-sm-12">
-                  <h1 class="mb-3">post title 1</h1>
-                  <p>date: feb 12 ,2024</p>
-                  <p>this is content of post 1</p>
-                </div>
-              </div>
-            </div>
-          </a>
+
+        <!-- our prodect -->
+        <div class="col-12">
+          <h3 class="text-decoration-underline">What we offer</h3>
+          <ul>
+            <li>
+              <h4>Outfits</h4>
+              <p class="ms-4">
+                discover a vast collection of clothing for men and womens
+                ranging from casual wear to formal attire , party wear,<br> all
+                curated to keep you stylish and comfortable
+              </p>
+            </li>
+            <li>
+              <h4>games</h4>
+              <p class="ms-4">
+                find your next adventure with our section of video games, board
+                games, and gaming accessories for nuthusiasts of all ages.
+              </p>
+            </li>
+            <li>
+              <h4>electroincs</h4>
+              <p class="ms-4">
+                stay ahead of the tech cureve with our assortment of gadgets,
+                devices, and home electronics designed to enhange your daily
+                life.
+              </p>
+            </li>
+            <li>
+              <h4>accessories</h4>
+              <p class="ms-4">
+                complement your lifestyle with our range of accessories
+                ,including bsgsmshoes,jewelry, and more.
+              </p>
+            </li>
+            <li>
+              <h4>sports</h4>
+              <p class="ms-4">
+                gear up for action with our sports collection, featuring
+                equipment,apparel,and accessoriesfor a variety of sports and
+                fitness activities
+              </p>
+            </li>
+          </ul>
         </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
-          <a href="#" style="text-decoration: none">
-            <div class="card">
-              <div class="row">
-                <div class="col-6 col-sm-12">
-                  <img
-                    class="img-fluid rounded h-100 w-100"
-                    src="https://picsum.photos/300/200"
-                    alt=""
-                  />
-                </div>
-                <div class="card-body col-6 col-sm-12">
-                  <h1 class="mb-3">post title 1</h1>
-                  <p>date: feb 12 ,2024</p>
-                  <p>this is content of post 1</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
-          <a href="#" style="text-decoration: none">
-            <div class="card">
-              <div class="row">
-                <div class="col-6 col-sm-12">
-                  <img
-                    class="img-fluid rounded h-100 w-100"
-                    src="https://picsum.photos/300/200"
-                    alt=""
-                  />
-                </div>
-                <div class="card-body col-6 col-sm-12">
-                  <h1 class="mb-3">post title 1</h1>
-                  <p>date: feb 12 ,2024</p>
-                  <p>this is content of post 1</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
-          <a href="#" style="text-decoration: none">
-            <div class="card">
-              <div class="row">
-                <div class="col-6 col-sm-12">
-                  <img
-                    class="img-fluid rounded h-100 w-100"
-                    src="https://picsum.photos/300/200"
-                    alt=""
-                  />
-                </div>
-                <div class="card-body col-6 col-sm-12">
-                  <h1 class="mb-3">post title 1</h1>
-                  <p>date: feb 12 ,2024</p>
-                  <p>this is content of post 1</p>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-3">
-          <a href="#" style="text-decoration: none">
-            <div class="card">
-              <div class="row">
-                <div class="col-6 col-sm-12">
-                  <img
-                    class="img-fluid rounded h-100 w-100"
-                    src="https://picsum.photos/300/200"
-                    alt=""
-                  />
-                </div>
-                <div class="card-body col-6 col-sm-12">
-                  <h1 class="mb-3">post title 1</h1>
-                  <p>date: feb 12 ,2024</p>
-                  <p>this is content of post 1</p>
-                </div>
-              </div>
-            </div>
-          </a>
+
+        <!-- our promise -->
+        <div class="col-12">
+          <h3 class="text-decoration-underline">our promise</h3>
+          <p class="ms-3 text-justify">at shopify, customer satisfaction is at tha heart of everything we do. we are commited to delivering high-qulity prodectat competitive peice, <br>ensuring a seamless shopping experience with secure payment option and fest, reliable delivery.<br><br>than you for choosing shopify. we look forward to serving you and becoming your favorite online shopping destination!</p>
         </div>
       </div>
-    </div>
-
+    </section>
     <!-- footer -->
 
     <footer class="bg-dark text-light">
-      <div class="row footer" >
+      <div class="row footer">
         <div class="col-12 col-sm-6 col-md-6 col-lg-4">
           <h4>About</h4>
           <p><a href="#">Contact As</a></p>
@@ -327,7 +281,7 @@
           <p><a href="">sports</a></p>
         </div>
       </div>
-      <div class="row mt-5 social" >
+      <div class="row mt-5 social">
         <div class="col-12 col-sm-12 col-md-6 col-lg-6 social-icon">
           <h4>Social</h4>
           <div class="d-flex ps-3">
@@ -348,7 +302,6 @@
         </div>
       </div>
     </footer>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
